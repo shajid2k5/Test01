@@ -1,7 +1,6 @@
 job('example1') {
 	steps {
-max=10
-for i in {2..$max}
+for (( i=2; i <= $max; ++i ))
 do
     echo "$i"
 done
